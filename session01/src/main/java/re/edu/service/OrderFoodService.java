@@ -1,7 +1,6 @@
 package re.edu.service;
 
 import org.springframework.stereotype.Service;
-import re.edu.repository.InventoryRepository;
 import re.edu.repository.UserAccountRepository;
 
 @Service
