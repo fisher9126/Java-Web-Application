@@ -1,25 +1,25 @@
 package re.edu.controller;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
+
+
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import re.edu.config.service.ProductService;
-import re.edu.model.Product;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 @Controller
+@RequestMapping("/bai4")
 public class ProductController {
-    private ProductService productService;
-@Autowired
-    public ProductController(ProductService productService) {
-        this.productService = productService;
-    }
 
-    @GetMapping("/product")
-    public String product(Model model) {
-       model.addAttribute("products",productService.getProducts());
-       return "product/product-list";
-   }
+    @GetMapping("/products")
+    public String getProducts(
+            @RequestParam("category") String category,
+            @RequestParam("limit") int limit,
+            ModelMap model
+    ) {
+        model.addAttribute("category", category)
+                .addAttribute("limit", limit)
+                .addAttribute("message", "Tim kiem thanh cong");
+
+        return "product/product-list";
+    }
 }
