@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th>STT</th>
+        <th>TÊN SÁCH</th>
+        <th>TÊN TÁC GIẢ</th>
+        <th>GIÁ TIỀN</th>
+        <th>THAO TÁC</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr th:each="b : ${books}">
+        <td th:text="${b.id}"></td>
+        <td th:text="${b.getTitle()}"></td>
+        <td th:text="${b.getAuthor()}"></td>
+
+        <td th:text="${b.getPrice()}"></td>
+        <td>
+            <a th:href="@{/books/{id}(id=${b.id})}">Xem chi tiết</a>
+        </td>
+
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
