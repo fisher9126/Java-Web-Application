@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Home</h1>
+<form action="/register" method="post" th:object="${students}">
+    <input type="text" th:field="*{id}" id="">
+    <span style="color: deeppink" th:if="${id_message!=null}"th:text="${id_message}"></span><br>
+    <input type="text" th:field="*{name}" id="">
+    <span style="color: deeppink" th:if="${name_message!=null}"th:text="${name_message}"></span><br>
+
+    <input type="date" th:field="*{dob}" id="">
+    <span style="color: deeppink" th:if="${dob_message!=null}"th:text="${dob_message}"></span><br>
+
+    <button type="submit">Register</button>
+</form>
+<form action="/uploads" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="">
+    <button type="submit">Upload</button>
+</form>
+</body>
+</html>

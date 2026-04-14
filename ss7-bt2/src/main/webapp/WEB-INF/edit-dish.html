@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sửa món</title>
+</head>
+<body>
+
+<h2>Sửa món ăn</h2>
+
+<form>
+    <label>Tên món:</label>
+    <input type="text" name="name" value="Phở bò"><br><br>
+
+    <label>Giá:</label>
+    <input type="number" name="price" value="50000"><br><br>
+
+    <label>Danh mục:</label>
+    <select name="category">
+        <option th:each="c : ${categories}"
+                th:value="${c}"
+                th:text="${c}">
+        </option>
+    </select><br><br>
+
+    <button type="submit">Cập nhật</button>
+</form>
+
+</body>
+</html>
