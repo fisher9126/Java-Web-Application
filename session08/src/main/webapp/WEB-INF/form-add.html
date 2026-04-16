@@ -6,6 +6,7 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 <form action="/products/add" method="post" th:object="${products}" >
     <label for="productName"></label>
     <input type="text" id="productName" th:field="*{productName}"><br>
@@ -14,5 +15,8 @@
     <p th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></p>
     <button type="submit"> </button>
 </form>
+=======
+
+>>>>>>> 72b6359 (mini-project)
 </body>
 </html>

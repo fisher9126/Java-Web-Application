@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d919c6dc-41ec-4abb-945f-4616be2e5f7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/src/main/java/re/validation/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/src/main/java/re/validation/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/src/main/java/re/validation/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/src/main/java/re/validation/dto/AddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/src/main/webapp/WEB-INF/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT1/src/main/webapp/WEB-INF/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT3/src/main/java/re/validation/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT3/src/main/java/re/validation/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT3/src/main/java/re/validation/dto/WithdrawRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT3/src/main/java/re/validation/validator/MultipleOfTenThousand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWA-SS8-BT3/src/main/java/re/validation/validator/MultipleOfTenThousandValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/config/CloudinaryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/controller/UploadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/java/re/edu/service/UploadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/webapp/WEB-INF/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/webapp/WEB-INF/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data-binding/src/main/webapp/WEB-INF/student.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session05/src/main/webapp/WEB-INF/templates/assets/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session05/src/main/webapp/WEB-INF/templates/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/src/main/java/re/validation/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/src/main/java/re/validation/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/src/main/java/re/validation/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/src/main/java/re/validation/model/dto/ProductDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/src/main/webapp/WEB-INF/form-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../session08/src/main/webapp/WEB-INF/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/src/main/java/re/hw/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/src/main/java/re/hw/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/src/main/java/re/hw/controller/RestaurantController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/src/main/java/re/hw/model/RestaurantProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/src/main/webapp/WEB-INF/restaurant.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt1/src/main/webapp/WEB-INF/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/src/main/java/re/hw/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/src/main/java/re/hw/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/src/main/java/re/hw/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/src/main/webapp/WEB-INF/add-dish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt2/src/main/webapp/WEB-INF/edit-dish.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/src/main/java/re/hw/config/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/src/main/java/re/hw/config/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/src/main/java/re/hw/controller/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/src/main/java/re/hw/model/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/src/main/webapp/WEB-INF/food.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7-bt3/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../session05/src/main/java/re/thymeleaf/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../session05/src/main/java/re/thymeleaf/controller/HelloController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3CLmVqkkf7IFMcQ4itFWH5IWJpQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Gradle.Build JWA-SS8-BT2.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Tomcat Server.Tomcat 10.1.54.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationStatuses">
+      <map>
+        <entry key="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+          <value>
+            <map>
+              <entry key="Tomcat 10.1.54" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="JWA-SS8-BT2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="JWA-SS8-BT2" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Tomcat 10.1.54" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.54" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : re : validation-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Gradle___re___validation_1_0_SNAPSHOT_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="6734ee3c-3425-4e94-b236-c6586524921e" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : re : validation-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d919c6dc-41ec-4abb-945f-4616be2e5f7b" name="Changes" comment="" />
+      <created>1776173251329</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776173251329</updated>
+      <workItem from="1776173252346" duration="1699000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

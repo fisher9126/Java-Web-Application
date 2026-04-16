@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Danh sách thiết bị</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .quantity {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 12px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background: #45a049;
+        }
+
+        .success {
+            text-align: center;
+            color: green;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Danh sách thiết bị</h2>
+
+<div th:if="${success}" class="success">
+    <p th:text="${success}"></p>
+</div>
+
+<div class="container">
+    <div class="card" th:each="e : ${equipments}">
+        <img th:src="${e.imageUrl}" alt="image"/>
+
+        <h3 th:text="${e.name}"></h3>
+
+        <p class="quantity">
+            Số lượng: <span th:text="${e.quantity}"></span>
+        </p>
+
+        <a class="btn" th:href="@{/booking/{id}(id=${e.id})}">
+            Đăng ký
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

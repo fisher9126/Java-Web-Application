@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý thiết bị</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .btn-add {
+            background: #4CAF50;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn-add:hover {
+            background: #45a049;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+
+        tr:hover {
+            background: #eaf2ff;
+        }
+
+        .btn-delete {
+            background: #e74c3c;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .btn-delete:hover {
+            background: #c0392b;
+        }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .device {
+            background: #3498db;
+            color: white;
+        }
+
+        .lab {
+            background: #e67e22;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Quản lý thiết bị</h2>
+
+<div class="top-bar">
+    <div></div>
+    <a href="/admin/equipment/add" class="btn-add">+ Thêm thiết bị</a>
+</div>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Loại</th>
+        <th>Số lượng</th>
+        <th>Hành động</th>
+    </tr>
+
+    <tr th:each="e : ${list}">
+        <td th:text="${e.id}"></td>
+
+        <td th:text="${e.name}"></td>
+
+        <!-- 🔥 TYPE -->
+        <td>
+            <span th:if="${e.type == 'DEVICE'}" class="badge device">Thiết bị</span>
+            <span th:if="${e.type == 'LAB'}" class="badge lab">Phòng Lab</span>
+        </td>
+
+        <td th:text="${e.quantity}"></td>
+
+        <td>
+            <a class="btn-delete"
+               th:href="@{/admin/equipment/delete/{id}(id=${e.id})}"
+               onclick="return confirm('Xóa thật không?')">
+                Xóa
+            </a>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
