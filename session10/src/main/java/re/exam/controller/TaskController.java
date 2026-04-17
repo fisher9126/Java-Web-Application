@@ -44,8 +44,9 @@ public class TaskController {
         newTask.setTitle(taskItem.getTitle());
         newTask.setDeadline(taskItem.getDeadline());
         newTask.setPriority(taskItem.getPriority());
+        System.out.println(newTask.getPriority());
         taskItemRepository.addTask(newTask);
-        return "task-list";
+        return "redirect:/";
 
     }
 }
