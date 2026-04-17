@@ -20,9 +20,7 @@
 
   <br>
   <label >PRIORITY</label>
-  <input type="String" th:field="*{priority}">
-  <p th:if="${#fields.hasErrors('priority')}"
-     th:errors="*{priority}">></p>
+  <input type="text" th:field="*{priority}">
   <br>
   <button type="submit">THÊM</button>
 
