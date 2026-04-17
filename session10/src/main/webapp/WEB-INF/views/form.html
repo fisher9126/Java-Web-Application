@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Thêm mới công việc</h1>
+<form th:action="@{/add}" method="post" th:object="${task}">
+
+  <label >Title</label>
+  <input type="text"th:field="*{title}">
+  <p th:if="${#fields.hasErrors('title')}"
+     th:errors="*{title}">></p>
+  <br>
+  <label >DEADLINE</label>
+  <input type="date" th:field="*{deadline}">
+  <p th:if="${#fields.hasErrors('deadline')}"
+     th:errors="*{deadline}">></p>
+
+  <br>
+  <label >PRIORITY</label>
+  <input type="String" th:field="*{priority}">
+  <p th:if="${#fields.hasErrors('priority')}"
+     th:errors="*{priority}">></p>
+  <br>
+  <button type="submit">THÊM</button>
+
+</form>
+</body>
+</html>
