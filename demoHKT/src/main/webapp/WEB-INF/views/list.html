@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{/assets/layout}">
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<div layout:fragment="navbar">
+    <h1>Danh sách ở đây</h1>
+    <p th:if="${products.size()==0}">Danh sách rỗng</p>
+    <a th:href="@{/add}">Thêm mới</a>
+    <table border="1" >
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>DESCRIPTION</th>
+            <th>IMG</th>
+            <th colspan="2" >ACTION</th>
+        </tr>
+        </thead>
+        <tbody th:each="product : ${products}">
+        <tr>
+            <td th:text="${product.id}"></td>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.description}"></td>
+            <td >
+                <img style="max-height: 100px" th:src="${product.getUrl()}" alt="">
+            </td>
+            <td><a th:href="@{/edit(id=${product.id})}">Sửa</a></td>
+            <td><a th:href="@{/delete(id=${product.id})}" onclick="confirm('Xác nhận xóa? ')">Xóa</a></td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+
+
+</body>
+</html>

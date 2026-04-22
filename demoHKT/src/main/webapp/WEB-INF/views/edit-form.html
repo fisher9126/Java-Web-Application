@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Sửa</h1>
+<form th:action="@{/edit}" method="post" enctype="multipart/form-data" th:object="${product}">
+    <label for="id">ID</label>
+
+    <input type="text" th:field="*{id}" readonly>
+    <label for="name">Name</label>
+    <input type="text"  id="name" th:field="*{name}">
+    <p th:errors="*{name}"></p>
+    <br>
+    <label for="des">Desciprion</label>
+    <input type="text"  id="des" th:field="*{description}">
+    <p th:errors="*{description}"></p>
+
+    <br>
+    <label for="url">Image</label>
+    <input type="file"  id="url" th:field="*{url}">
+    <p th:errors="*{url}"></p>
+
+    <br>
+    <button type="submit">ADD</button>
+</form>
+</body>
+</html>

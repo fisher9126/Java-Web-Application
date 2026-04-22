@@ -37,7 +37,7 @@ public class BookingController {
         BookingDTO dto = new BookingDTO();
         dto.setEquipmentId(id);
 
-        // 🔥 nếu là lab → auto = 1
+        //  nếu là lab → auto = 1
         if ("LAB".equals(eq.getType())) {
             dto.setQuantity(1);
         }
@@ -53,13 +53,13 @@ public class BookingController {
     public String submit(
             @Valid @ModelAttribute("bookingDTO") BookingDTO dto,
             BindingResult result,
-            Model model, // 🔥 thêm cái này
+            Model model, //  thêm cái này
             RedirectAttributes redirect
     ) {
 
         if (result.hasErrors()) {
 
-            // 🔥 add lại equipment
+            //  add lại equipment
             model.addAttribute("equipment",
                     equipmentService.getById(dto.getEquipmentId()));
 

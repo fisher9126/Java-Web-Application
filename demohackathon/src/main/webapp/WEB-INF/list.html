@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Danh sách</h1>
+<a th:href="@{/add}">Thêm</a>
+<p th:text="${lists.size()}"></p>
+<ul th:each="item : ${lists}">
+    <img style="max-height: 100px" th:src="${item.getUrl()}" alt="">
+    <li th:text="${item.getA()}"></li>
+    <li th:text="${item.getB()}"></li>
+
+</ul>
+</body>
+</html>

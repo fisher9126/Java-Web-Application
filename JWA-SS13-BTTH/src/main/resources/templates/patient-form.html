@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>Thêm bệnh nhân</h2>
+
+<form th:action="@{/patients/save}" method="post" th:object="${patient}">
+    Tên: <input type="text" th:field="*{fullName}"/><br>
+    Chuẩn đoán: <input type="text" th:field="*{diagnosis}"/><br>
+    <button type="submit">Lưu</button>
+</form>
+
+</body>
+</html>

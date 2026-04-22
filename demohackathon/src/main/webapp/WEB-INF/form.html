@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        input, button {
+            margin: 5px 0;
+            display: block;
+        }
+        .error {
+            color: red;
+        }
+        #imagePreview {
+            margin-top: 10px;
+            max-height: 200px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Form upload</h1>
+
+<form action="/add" method="post" enctype="multipart/form-data" th:object="${imgFile}">
+
+    <label>a</label>
+    <input type="number" th:field="*{a}">
+    <p class="error" th:errors="*{a}"></p>
+
+    <label>b</label>
+    <input type="number" th:field="*{b}">
+    <p class="error" th:errors="*{b}"></p>
+
+    <!-- lỗi global (a < b) -->
+    <p class="error"
+       th:if="${#fields.hasGlobalErrors()}"
+       th:each="err : ${#fields.globalErrors()}"
+       th:text="${err}">
+    </p>
+
+    <label for="img">Ảnh</label>
+    <input type="file"
+           id="img"
+           th:field="*{imgFile}"
+           accept="image/*"
+           onchange="previewImage(event)">
+
+    <button type="submit">Upload</button>
+</form>
+
+<!-- preview -->
+<div>
+    <img id="imagePreview" alt="Ảnh xem trước">
+</div>
+
+<script>
+    function previewImage(event) {
+        const input = event.target;
+        const preview = document.getElementById('imagePreview');
+
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.src = "";
+            preview.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

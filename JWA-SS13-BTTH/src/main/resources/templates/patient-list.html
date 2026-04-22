@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>Danh sách bệnh nhân</h2>
+
+<p>Tổng: <span th:text="${total}"></span></p>
+
+<a href="/patients/add">Thêm mới</a>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Tên</th>
+        <th>Chuẩn đoán</th>
+        <th>Bác sĩ</th>
+    </tr>
+
+    <tr th:each="p : ${patients}">
+        <td th:text="${p.id}"></td>
+        <td th:text="${p.fullName}"></td>
+        <td th:text="${p.diagnosis}"></td>
+        <td th:text="${p.doctor.name}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
